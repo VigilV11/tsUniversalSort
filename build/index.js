@@ -1,0 +1,21 @@
+"use strict";
+// Sort numbers, strings, and linked list
+Object.defineProperty(exports, "__esModule", { value: true });
+var NumbersCollection_1 = require("./NumbersCollection");
+var StringCollection_1 = require("./StringCollection");
+var LinkedList_1 = require("./LinkedList");
+var numbersCollection = new NumbersCollection_1.NumbersCollection([1, 5, 3, -2, 7, -10]);
+numbersCollection.sort();
+numbersCollection.print();
+var stringCollection = new StringCollection_1.StringCollection('xYaBcE');
+stringCollection.sort();
+stringCollection.print();
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(23);
+linkedList.add(-10);
+linkedList.add(100);
+linkedList.add(5);
+linkedList.add(250);
+linkedList.add(-27);
+linkedList.sort();
+linkedList.print();
